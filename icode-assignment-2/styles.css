@@ -1,0 +1,96 @@
+*{
+  box-sizing:border-box;
+  padding:0;
+  color: pink;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin : 0 ;
+  
+}
+
+
+body{
+    background-image: url(background_img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    max-height: 80vh;
+    max-width: 550px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(77, 19, 74, 0.5);
+    padding: 40px;
+   
+}
+
+
+.sky{
+    position : relative;
+}
+.fa-star{
+    position: absolute;
+}
+.fa-moon {
+    font-size: 100px;
+    color: silver;  
+    
+}
+
+.glow .fa-star {
+    color: yellow;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.fa-moon:hover {
+    transform : scale(1.1);
+    
+}
+
+@keyframes glow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+.first {
+    left: -30px;
+    top: 40%;
+}
+.second {
+    top: 110px;
+    left:70px;
+}
+.third {
+    left: 90%;
+    top:-20px;
+    
+
+}
+
+
+.body,.block ,.cards{
+    display:flex;
+    justify-content:space-between;
+    gap : 5px;
+    margin : 30px 0px;
+}
+
+.temperature{
+    margin-left : 0px;
+}
+
+
+.weather-report,.cards{
+    background-color:rgba(0, 0, 0, 0.35);
+    padding: 5px 0;
+    text-align: center;
+}
