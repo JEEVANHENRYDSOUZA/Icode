@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   
+    <title>Menu Card</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button class="toggle"><strong>&#9776;</strong></button>
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="logo"><i class="fas fa-heart"></i>DeliFinish<i class="fas fa-heart"></i></div>
+                    <button class="close-btn">&#10006</button>
+                </div>
+                <ul class="links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#find">Find your favorites</a></li>
+                    <li><a href="#get">Tickle your tastebuds<span class="material-symbols-outlined">
+                        nutrition
+                        </span></a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </aside>
+            <div class="search-container">
+                <input type="search" id="search-input" placeholder="Seek your guilty pleasure...">
+                <button id="search-button">Search</button>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="carousel">
+            <div class="cards">
+                <button id="prev"><i class="fas fa-arrow-left"></i></button>
+                <div class="cards">
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star star star4"></i>
+                                <i class="fa-solid fa-star-half-stroke star star5"></i>
+                            </div>
+                            <span class="rating">4.2</span>
+                            <span class="ratings">23 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_mix.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Forest Fruit Pie</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" onclick="showModal('Forest Fruit Pie')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star-half-stroke star star4"></i>
+                                <i class="fa-regular fa-star star star5"></i>
+                            </div>
+                            <span class="rating">3.1</span>
+                            <span class="ratings">46 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_mix.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Freaky Fruit Mix</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" onclick="showModal('Freaky Fruit Mix')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star star star4"></i>
+                                <i class="fa-regular fa-star star star5"></i>
+                            </div>
+                            <span class="rating">4.0</span>
+                            <span class="ratings">69 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_pie.jpg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Coated and Baked Fruit</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" onclick="showModal('Coated and Baked Fruit')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="far fa-star star star4"></i>
+                                <i class="far fa-star star star5"></i>
+                            </div>
+                            <span class="rating">3.0</span>
+                            <span class="ratings">4 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_pizza.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Forest Fruit Cupcake</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <a class="more" onclick="showModal('Forest Fruit Cupcake')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star star star4"></i>
+                                <i class="fa-solid fa-star star star5"></i>
+                            </div>
+                            <span class="rating">5.0</span>
+                            <span class="ratings">593 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_mix.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Frutty Tutty Cocktail</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" onclick="showModal('Frutty Tutty Cocktail')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star star star4"></i>
+                                <i class="fa-solid fa-star-half-stroke star star5"></i>
+                            </div>
+                            <span class="rating">4.5</span>
+                            <span class="ratings">36 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_slush.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Forest Fruit Pizza</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" onclick="showModal('Forest Fruit Pizza')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star star star4"></i>
+                                <i class="fa-solid fa-star-half-stroke star star5"></i>
+                            </div>
+                            <span class="rating">4.3</span>
+                            <span class="ratings">13 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="coated_baked.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Fruit Custard Blend</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" onclick="showModal('Fruit Custard Blend')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star star star4"></i>
+                                <i class="fa-solid fa-star star star5"></i>
+                            </div>
+                            <span class="rating">5.0</span>
+                            <span class="ratings">19 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_pizza.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Forest Fruit Tart</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" onclick="showModal('Forest Fruit Tart')">Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star star star3"></i>
+                                <i class="fa-solid fa-star star star4"></i>
+                                <i class="fa-solid fa-star-half-stroke star star5"></i>
+                            </div>
+                            <span class="rating">4.9</span>
+                            <span class="ratings">24 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_slush.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Fruit Shakerella</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" >Read More</a>
+                    </div>
+                    <div class="card">
+                        <div class="review-content">
+                            <div class="stars">
+                                <i class="fa-solid fa-star star star1"></i>
+                                <i class="fa-solid fa-star star star2"></i>
+                                <i class="fa-solid fa-star-half-stroke star star3"></i>
+                                <i class="far fa-star star star4"></i>
+                                <i class="far fa-star star star5"></i>
+                            </div>
+                            <span class="rating">2.5</span>
+                            <span class="ratings">2 Reviews</span>
+                        </div>
+                        <figure>
+                            <img src="fruit_pizza.jpeg" alt="fruit pie image" width="100">
+                        </figure>
+                        <h3>Fruit Slush</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam cumque ipsam molestiae possimus dolorum.
+                        </p>
+                        <br>
+                        <a class="more" >Read More</a>
+                    </div>
+                </div>
+                <button id="next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
